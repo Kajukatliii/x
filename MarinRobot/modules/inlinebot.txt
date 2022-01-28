@@ -1,4 +1,4 @@
-"""import traceback
+import traceback
 
 from MarinRobot import pbot as app
 from MarinRobot.utils.pluginhelp import fetch
