@@ -230,12 +230,12 @@ try:
 
     REDIS.ping()
 
-    LOGGER.info("[SHASA]: Connecting To Shasa • Data Center • Mumbai • Redis Database")
+    LOGGER.info("[SHASA]: Connecting To Marin • Data Center • Mumbai • Redis Database")
 
 except BaseException:
 
     raise Exception(
-        "[SHASA ERROR]: Your Shasa • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again."
+        "[SHASA ERROR]: Your Marin • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again."
     )
 
 finally:
@@ -243,7 +243,7 @@ finally:
     REDIS.ping()
 
     LOGGER.info(
-        "[SHASA]: Connection To The Shasa • Data Center • Mumbai • Redis Database Established Successfully!"
+        "[SHASA]: Connection To The Marin • Data Center • Mumbai • Redis Database Established Successfully!"
     )
 
 SYL = Sylviorus()
