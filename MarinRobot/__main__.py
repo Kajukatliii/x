@@ -462,7 +462,7 @@ def shasa_callback_data(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", callback_data="NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ",  url = "https://t.me/NobaraSupport"
                         ),
                         InlineKeyboardButton(
                             text="ᴄʀᴇᴅɪᴛ", callback_data="shasa_credit"
