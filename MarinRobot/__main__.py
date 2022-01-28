@@ -287,13 +287,13 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/marinxsupport"
                         )
                     ],
                     [
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/MarinUpdates",
+                            url="https://telegram.dog/MarinXUpdates",
                         )
                     ],
                 ]
@@ -425,7 +425,7 @@ def help_button(update, context):
 
     except BadRequest:
         pass
-GROUP_START_IMG = "https://telegra.ph/file/e36d740c802879c68dda6.mp4"
+GROUP_START_IMG = "https://telegra.ph/file/d76017990a57902223e02.mp4"
 
 def shasa_callback_data(update, context):
     query = update.callback_query
@@ -433,12 +433,12 @@ def shasa_callback_data(update, context):
     if query.data == "shasa_":
         query.message.edit_text(
             text="""
-        ❍[Owner](https://t.me/Xtheanonymous)💜
-        ❍[Updates](https://t.me/NobaraSupport)🧡
-        ❍[Suppσrt](https://t.me/NobaraSupport)🤍
-        ❍[Suppσrt](https://t.me/NobaraSupport)💚
-        ❍ [ChatGrp](https://t.me/AnimeChatAura)❤️
-        ✨[Vc Player Help](https://telegra.ph/file/bc78aaf26976f892d6478.jpg)✨""",
+        ❍[Owner](https://t.me/sinixious)✯
+        ❍[Updates](https://t.me/marinxsupport)✯
+        ❍[Suppσrt](https://t.me/marinxsupport)✯
+        ❍[Suppσrt](https://t.me/marinxsupport)✯
+        ❍ [ChatGrp](https://t.me/akatsuki_anime_chat)✯
+        ✨[vc player help](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg)✨""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -450,7 +450,7 @@ def shasa_callback_data(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@MarinRobot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@MarinxRobot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -524,17 +524,17 @@ def shasa_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/NobaraSupport"),
+                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/marinxsupport"),
                         InlineKeyboardButton(
-                            text="ᴠᴄ ʜᴇʟᴘ", url="https://telegra.ph/file/bc78aaf26976f892d6478.jpg"
+                            text="Owner", url="https://t.me/sinixious"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/marinxusupport"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/NobaraSupport"
+                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/marinxupdates"
                         ),
                     ],
                     [
@@ -553,17 +553,17 @@ def shasa_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Xtheanonymous"),
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/sinixious"),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ", url="https://github.com/Unknown-san"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠ", url="https://t.me/Xtheanonymous"
+                            text="ᴅᴇᴠ", url="https://t.me/sinixious"
                         ),
                         InlineKeyboardButton(
-                            text="ꜱᴜᴅᴏ", url="https://t.me/NobaraSupport"
+                            text="ꜱᴜᴅᴏ", url="https://t.me/marinxsupport"
                         ),
                     ],
                     [
