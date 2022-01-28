@@ -110,12 +110,11 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/29a1f88c7f200d4959359.jpg) 」────
+────「 [{}](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg) 」────
 *ʜᴇʏ! {},*
 *ɪ ᴀᴍ 𝙈𝘼𝙍𝙄𝙉 ᴀ ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴᴀʟ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✓• *Uᴘᴛɪᴍᴇ:* `{}`
-✓• `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs. ××
 """
@@ -517,7 +516,7 @@ def shasa_callback_data(update, context):
                 ]
             ),
         )
-    elif query.data == "Nobarasupport":
+    elif query.data == "MarinSupport":
         query.message.edit_text(
             text="* Marin support chats*" "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
@@ -555,7 +554,7 @@ def shasa_callback_data(update, context):
                     [
                         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/sinixious"),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url="https://github.com/Unknown-san"
+                            text="ɢɪᴛʜᴜʙ", url="https://github.com/kajukatlii"
                         ),
                     ],
                     [
