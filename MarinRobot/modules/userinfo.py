@@ -450,7 +450,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Nezuko statistics 」*\n\n"
+    status = "*╒═══「 Marin statistics 」*\n\n"
     status += "*➢ System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
@@ -471,8 +471,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n [✦Updates](https://t.me/MarinUpdates) | [✦Support](https://t.me/NobaraSupport)\n\n"
-            + "╘══「 by [UNKNOWN](https://t.me/XtheAnonymous) 」\n",
+            + f"\n\n [✦Updates](https://t.me/MarinxUpdates) | [✦Support](https://t.me/marinxsupport)\n\n"
+            + "╘══「 by [Sinixious](https://t.me/Sinixois) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -484,9 +484,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n [✦Updates](https://t.me/MaRINsUPDATES) | [✦Support](https://t.me/{SUPPORT_CHAT})\n\n"
+                    + f"\n\n [✦Updates](https://t.me/MaRINxUPDATES) | [✦Support](https://t.me/{SUPPORT_CHAT})\n\n"
                 )
-                + "╘══「 by [Unknown](https://t.me/XtheAnonymous) 」\n"
+                + "╘══「 by [Sinixious](https://t.me/Sinisous) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
