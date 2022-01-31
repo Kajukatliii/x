@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
-PM_START_TEXT = """━━━━━━━━  ᴍᴀʀɪɴ  ━━━━━━━━\n            ≛≛  *ᴜᴘᴛɪᴍᴇ:* `{}`"""
+PM_START_TEXT = """ɪ ᴀᴍ 𝙈𝘼𝙍𝙄𝙉 ᴀ ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴᴀʟ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.\n            ≛≛  *ᴜᴘᴛɪᴍᴇ:* `{}`"""
 
 GROUP_START_TEXT = """
 I'm awake already!
