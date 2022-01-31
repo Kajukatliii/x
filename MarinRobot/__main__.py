@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
-PM_START_TEXT = """━━━━━━━  *ᴍᴀʀɪɴ*  ━━━━━━━\n             ≛≛  *ᴜꜱᴇʀꜱ:*   `{}`\n             ≛≛  *ᴄʜᴀᴛꜱ:*   `00{}`"""
+PM_START_TEXT = """━━━━━━━━  ᴍᴀʀɪɴ  ━━━━━━━━\n            ≛≛  *ᴜᴘᴛɪᴍᴇ:* `{}`"""
 
 GROUP_START_TEXT = """
 I'm awake already!
@@ -232,8 +232,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
-                    sql.num_users(),
-                    sql.num_chats(),
+                    escape_markdown(uptime),
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
