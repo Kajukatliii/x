@@ -1,29 +1,3 @@
-"""
-MIT License
-
-Copyright (C) 2021 MdNoor786
-
-This file is part of @Shasa_RoBot (Telegram Bot)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
-
 import html
 import importlib
 import json
@@ -109,15 +83,7 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
-PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg) 」────
-*ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝙈𝘼𝙍𝙄𝙉 ᴀ ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴᴀʟ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-✓• *Uᴘᴛɪᴍᴇ:* `{}`
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs. ××
-"""
+PM_START_TEXT = """━━━━━━━  *ᴍᴀʀɪɴ*  ━━━━━━━\n             ≛≛  *ᴜꜱᴇʀꜱ:*   `{}`\n             ≛≛  *ᴄʜᴀᴛꜱ:*   `00{}`"""
 
 GROUP_START_TEXT = """
 I'm awake already!
@@ -126,17 +92,14 @@ Haven't slept since: {}
 
 buttons = [
     [
-        InlineKeyboardButton(
-            text=f"Add {BOT_NAME} To Your Group",
-            url=f"t.me/{BOT_USERNAME}?startgroup=true",
-        )
+        InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ɪɴғᴏ", callback_data="shasa_basichelp"),
         InlineKeyboardButton(text="ɪɴʟɪɴᴇ", switch_inline_query_current_chat=""),
     ],
     [
-        InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
+        InlineKeyboardButton(text="➕ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),
     ],
 ]
 
@@ -155,7 +118,7 @@ I'm a Queen For Fun and help admins manage their groups ! Have a look at the fol
 """
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
-
+PHOTO = "https://telegra.ph/file/9f1db39bafa403e003974.mp4"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -262,12 +225,13 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            update.effective_message.reply_video(
+                PHOTO,
+                timeout=60,
+            )
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
-                    escape_markdown(context.bot.first_name),
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats(),
                 ),
