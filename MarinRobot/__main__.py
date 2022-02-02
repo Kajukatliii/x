@@ -399,7 +399,7 @@ def shasa_callback_data(update, context):
         ❍[Updates](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
-        ❍ [ChatGrp](https://t.me/akatsuki_anime_chat)✯
+        ❍ [ChatGrp](https://t.me/Animec_cChat)✯
         ✨[vc player help](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg)✨""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -488,7 +488,7 @@ def shasa_callback_data(update, context):
                     [
                         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/marinxsupport"),
                         InlineKeyboardButton(
-                            text="Owner", url="https://t.me/xlorem"
+                            text="Owner", url="https://t.me/karlexd"
                         ),
                     ],
                     [
