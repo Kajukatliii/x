@@ -347,7 +347,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/NobaraUpdates/63">?</a>]'.format(
+        text += ' [<a href="https://t.me/marinxupdates/63">?</a>]'.format(
             bot.username,
         )
 
@@ -472,7 +472,7 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n [✦Updates](https://t.me/MarinxUpdates) | [✦Support](https://t.me/marinxsupport)\n\n"
-            + "╘══「 by [Sinixious](https://t.me/Sinixois) 」\n",
+            + "╘══「 by [Lorem](https://t.me/Xlorem) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -486,7 +486,7 @@ def stats(update, context):
                     )
                     + f"\n\n [✦Updates](https://t.me/MaRINxUPDATES) | [✦Support](https://t.me/{SUPPORT_CHAT})\n\n"
                 )
-                + "╘══「 by [Sinixious](https://t.me/Sinisous) 」\n"
+                + "╘══「 by [Lorem](https://t.me/Xlorem) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
