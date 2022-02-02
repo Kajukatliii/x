@@ -395,7 +395,7 @@ def shasa_callback_data(update, context):
     if query.data == "shasa_":
         query.message.edit_text(
             text="""
-        ❍[Owner](https://t.me/sinixious)✯
+        ❍[Owner](https://t.me/xlorem)✯
         ❍[Updates](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
@@ -488,7 +488,7 @@ def shasa_callback_data(update, context):
                     [
                         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/marinxsupport"),
                         InlineKeyboardButton(
-                            text="Owner", url="https://t.me/sinixious"
+                            text="Owner", url="https://t.me/xlorem"
                         ),
                     ],
                     [
@@ -515,14 +515,14 @@ def shasa_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/sinixious"),
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/xlorem"),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ", url="https://github.com/kajukatlii"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠ", url="https://t.me/sinixious"
+                            text="ᴅᴇᴠ", url="https://t.me/xlorem"
                         ),
                         InlineKeyboardButton(
                             text="ꜱᴜᴅᴏ", url="https://t.me/marinxsupport"
@@ -861,7 +861,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Nezuko started, Using long polling. | BOT: [@{dispatcher.bot.username}]"
+            f"Marin started, Using long polling. | BOT: [@{dispatcher.bot.username}]"
         )
         updater.start_polling(
             timeout=15,
