@@ -113,7 +113,7 @@ buttons = [
         InlineKeyboardButton(text="Owner", url="t.me/karlexd"),
     ],
     [
-        InlineKeyboardButton(text="Support", url="t.me/marinxsupport),
+        InlineKeyboardButton(text="Support", url="t.me/marinxsupport"),
         InlineKeyboardButton(text="VortexUB", url="t.me/VortexUB"),
     ],
     [
