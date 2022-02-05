@@ -105,7 +105,7 @@ Haven't slept since: {}
 
 buttons = [
     [
-        InlineKeyboardButton(text="About", callback_data="about"),
+        InlineKeyboardButton(text="CastleVania", url="t.me/Animecastlevania"),
     ],
     [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
