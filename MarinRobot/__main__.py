@@ -83,7 +83,20 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
-PM_START_TEXT = """ɪ ᴀᴍ 𝙈𝘼𝙍𝙄𝙉 ᴀ ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴᴀʟ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.\n            ≛≛  *ᴜᴘᴛɪᴍᴇ:* `{}`"""
+PM_START_TEXT = """Heyo there, I'm Marin Kitagawa.
+A multifunctional anime themed group management [bot](https://telegra.ph/file/b23870e738d7ec1ff0565.mp4).
+Add me to your group to make it manage easy and fun.
+Checkout below buttons~"""
+
+
+
+ABOUT_TEXT = """Heyo, Marin here. 
+This my about page.
+I'm Anime Themed bot named Marin,a character from Anime *Sono Bisque Doll wa Koi wo Suru(My Dress-Up Darling)*
+I can do a lot of things...checkout them via below *help* button. 
+
+
+Join my support group for any kind of help or reporting error/bugs."""
 
 GROUP_START_TEXT = """
 I'm awake already!
@@ -92,14 +105,14 @@ Haven't slept since: {}
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="About", callback_data="about"),
     ],
     [
-        InlineKeyboardButton(text="ɪɴғᴏ", callback_data="shasa_basichelp"),
-        InlineKeyboardButton(text="ɪɴʟɪɴᴇ", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Updates", url="t.me/MarinXUpdates"),
     ],
     [
-        InlineKeyboardButton(text="➕ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),
+        InlineKeyboardButton(text="Add Me To Your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true),
     ],
 ]
 
@@ -206,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="[•༶B𝚊𝚌k༶•]", callback_data="help_back"
+                                    text="Back", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -225,10 +238,6 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_video(
-                PHOTO,
-                timeout=60,
-            )
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
@@ -342,10 +351,10 @@ def help_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="【༶Bᴀᴄᴋ༶】", callback_data="help_back"
+                                text="🔙", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="【༶Hᴏᴍᴇ༶】", callback_data="shasa_back"
+                                text="Home", callback_data="shasa_back"
                             ),
                         ]
                     ]
@@ -407,33 +416,28 @@ def shasa_callback_data(update, context):
                 [[InlineKeyboardButton(text="•༶Bᴀᴄᴋ༶•", callback_data="shasa_back")]]
             ),
         )
-    elif query.data == "shasa_basichelp":
+    elif query.data == "about":
         query.message.edit_text(
-            text=f"*Here's basic Help regarding* *How to use Me?*"
-            f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
-            f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@MarinxRobot` in that chat to refresh admin list in My database.\n"
-            f"\n\n*All done now use below given button's to know about use!*\n"
-            f"",
+            text=ABOUT_TEXT,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴀᴅᴍɪɴ", callback_data="shasa_admin"),
-                        InlineKeyboardButton(text="ɴᴏᴛᴇs", callback_data="shasa_notes"),
+                        InlineKeyboardButton(text="Admin", callback_data="shasa_admin"),
+                        InlineKeyboardButton(text="Inline", callback_data="shasa_inline"),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",  url = "https://t.me/marinxsupport"
+                            text="Support",  url = "https://t.me/marinxsupport"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄʀᴇᴅɪᴛ", callback_data="shasa_credit"
+                            text="Credits", callback_data="shasa_credit"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="•༶Bᴀᴄᴋ༶•", callback_data="shasa_back"
+                            text="🔙", callback_data="shasa_back"
                         ),
                     ],
                 ]
@@ -455,7 +459,7 @@ def shasa_callback_data(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="•༶Bᴀᴄᴋ༶•", callback_data="shasa_basichelp"
+                            text="🔙", callback_data="shasa_basichelp"
                         )
                     ]
                 ]
@@ -464,11 +468,8 @@ def shasa_callback_data(update, context):
 
     elif query.data == "shasa_notes":
         query.message.edit_text(
-            text=f"<b> Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
-            parse_mode=ParseMode.HTML,
+            text=,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
