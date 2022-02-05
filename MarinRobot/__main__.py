@@ -109,7 +109,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="✰Help✰", callback_data="help_back"),
-        InlineKeyboardButton(text="✯Update✯s", url="t.me/MarinXUpdates"),
+        InlineKeyboardButton(text="✯Updates✯", url="t.me/MarinXUpdates"),
         InlineKeyboardButton(text="Owner", url="t.me/karlexd"),
     ],
     [
