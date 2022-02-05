@@ -110,6 +110,11 @@ buttons = [
     [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
         InlineKeyboardButton(text="Updates", url="t.me/MarinXUpdates"),
+        InlineKeyboardButton(text="Owner", url="t.me/karlexd"),
+    ],
+    [
+        InlineKeyboardButton(text="Support", url="t.me/marinxsupport),
+        InlineKeyboardButton(text="VortexUB", url="t.me/VortexUB"),
     ],
     [
         InlineKeyboardButton(text="Add Me To Your Group", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
