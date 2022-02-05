@@ -391,7 +391,7 @@ Admin Commands only:
 
 Anti-Spam used by bot devs to ban spammers across all groups. This helps protect
 you and your groups by removing spam flooders as quickly as possible.
-Note: Users can appeal gbans or report spammers at @SuzuneSupport 
+Note: Users can appeal gbans or report spammers at @MarunxSupport 
 
 This also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
 *What is SpamWatch?*
