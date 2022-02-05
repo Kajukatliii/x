@@ -425,7 +425,7 @@ def shasa_callback_data(update, context):
                 [
                     [
                         InlineKeyboardButton(text="Admin", callback_data="shasa_admin"),
-                        InlineKeyboardButton(text="Inline", callback_data="shasa_inline"),
+                        InlineKeyboardButton(text="Help", callback_data="help_back"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -468,7 +468,7 @@ def shasa_callback_data(update, context):
 
     elif query.data == "shasa_notes":
         query.message.edit_text(
-            text=,
+            text="under work",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -516,22 +516,22 @@ def shasa_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/xlorem"),
+                        InlineKeyboardButton(text="Owner", url="t.me/xlorem"),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url="https://github.com/kajukatlii"
+                            text="Github", url="https://github.com/kajukatlii"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠ", url="https://t.me/xlorem"
+                            text="Updates", url="https://t.me/MarinXUpdates"
                         ),
                         InlineKeyboardButton(
-                            text="ꜱᴜᴅᴏ", url="https://t.me/marinxsupport"
+                            text="Support", url="https://t.me/marinxsupport"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="•༶Bᴀᴄᴋ༶•", callback_data="shasa_basichelp"
+                            text="🔙 ", callback_data="shasa_basichelp"
                         ),
                     ],
                 ]
