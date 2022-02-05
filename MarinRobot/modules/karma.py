@@ -1,11 +1,11 @@
 from pyrogram import filters
 
-from MarinRobot .bot_plugins.dbfunctions import is_karma_on, karma_off, karma_on, get_karma, get_karmas, update_karma, int_to_alpha, alpha_to_int
-from MarinRobot .utils.pluginshelper import member_permissions
-from MarinRobot .utils.permissions import adminsOnly
-from MarinRobot .utils.filter_groups import karma_negative_group, karma_positive_group
-from MarinRobot .utils.errors import capture_err
-from MarinRobot  import pbot as app
+from MarinRobot.bot_plugins.dbfunctions import is_karma_on, karma_off, karma_on, get_karma, get_karmas, update_karma, int_to_alpha, alpha_to_int
+from MarinRobot.utils.pluginshelper import member_permissions
+from MarinRobot.utils.permissions import adminsOnly
+from MarinRobot.utils.filter_groups import karma_negative_group, karma_positive_group
+from MarinRobot.utils.errors import capture_err
+from MarinRobot import pbot as app
 
 import asyncio
 from pyrogram import filters
