@@ -117,7 +117,7 @@ buttons = [
         InlineKeyboardButton(text="✦VortexUB✦", url="t.me/VortexUB"),
     ],
     [
-        InlineKeyboardButton(text="✪Add Me To Your Group✪", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="✪Add Me To Your Group✪", url=f"t.me/MarinxRobot?startgroup=true"),
     ],
 ]
 
