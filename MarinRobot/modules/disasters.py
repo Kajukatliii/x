@@ -537,7 +537,7 @@ def devlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
-__help__ = """
+__help__ = f"""
  Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
  Group admins/group owners do not need these commands.
  
@@ -606,7 +606,6 @@ Ping:*
 ❍ /del var <var>*:* Delete existing variable.
 ❍ /logs Get heroku dyno logs.
 
-`⚠️ Read from top`
 Visit @{SUPPORT_CHAT} for more information.
 """
 
