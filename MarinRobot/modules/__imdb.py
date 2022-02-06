@@ -105,3 +105,10 @@ async def imdb(e):
         )
     except IndexError:
         await e.reply("Plox enter **Valid movie name** kthx")
+        
+        __mod_name__ = "IMDB"
+
+__help__ = """
+
+|• /imdb : in which IMDb users explain what they liked or disliked about a title and offer other criticism.
+"""
