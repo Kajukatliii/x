@@ -606,7 +606,7 @@ Ping:*
 ❍ /del var <var>*:* Delete existing variable.
 ❍ /logs Get heroku dyno logs.
 
-Visit @{SUPPORT_CHAT} for more information.
+Visit @MarinxSupport for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "addredlion"), addsudo, run_async=True)
