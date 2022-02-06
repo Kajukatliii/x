@@ -14,6 +14,7 @@ from MarinRobot import (
     OWNER_ID,
     REDLIONS,
     SPRYZONS,
+    SUPPORT_CHAT,
     dispatcher,
 )
 from MarinRobot.modules.helper_funcs.chat_status import (
