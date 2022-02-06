@@ -537,8 +537,7 @@ def devlist(update: Update, context: CallbackContext):
     m.edit_text(reply, parse_mode=ParseMode.HTML)
 
 
- __help__ = """
-*⚠️ Notice:*
+__help__ = """
  Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
  Group admins/group owners do not need these commands.
  
