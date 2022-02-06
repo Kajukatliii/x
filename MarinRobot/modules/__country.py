@@ -97,7 +97,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By Shasa.</b>
+Gathered By @Marinxrobot.</b>
 """
 
     await borg.send_message(
@@ -107,3 +107,9 @@ Gathered By Shasa.</b>
     )
 
     await event.delete()
+    
+    __mod_name__ = "Country"
+
+__help__ = """
+|• /country : Gather information of given country name.
+"""
