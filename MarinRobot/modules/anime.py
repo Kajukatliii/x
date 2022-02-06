@@ -554,17 +554,6 @@ Get information about anime, manga or characters from [AniList](anilist.co) and 
   ❍ /upcoming*:* returns a list of new anime in the upcoming seasons from AniList
   ❍ /airing <anime>*:* returns anime airing info from AniList
 
-*MyAnimelist Commands:*
-__help__ = """
-
-  ✬ /manime <anime>*:* returns information about the anime MAL.
-  ✬ /mcharacter <character>*:* returns information about the character from MAL.
-  ✬ /mmanga <manga>*:* returns information about the manga from MAL.
-  ✬ /mupcoming*:* returns a list of new anime in the upcoming seasons from MAL.
-  ✬ /user <user>*:* returns information about a MyAnimeList user
-  ✬ /animequotes*:* sends random anime quotes
-     /qoutes
-  """
 *Anime Search Commands:*
 
    ❍ /kayo*:* search an Anime on AnimeKayo website
@@ -575,6 +564,17 @@ This is where whatanime comes in, just reply to that media with /whatanime and i
         parse_mode=ParseMode.MARKDOWN,
     )
 
+__help__ = """
+
+  ✬ /manime <anime>*:* returns information about the anime MAL.
+  ✬ /mcharacter <character>*:* returns information about the character from MAL.
+  ✬ /mmanga <manga>*:* returns information about the manga from MAL.
+  ✬ /mupcoming*:* returns a list of new anime in the upcoming seasons from MAL.
+  ✬ /user <user>*:* returns information about a MyAnimeList user
+  ✬ /animehelp*:* returns available anime cmnds 
+  ✬ /animequotes*:* sends random anime quotes
+     /qoutes
+"""
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
 AIRING_HANDLER = DisableAbleCommandHandler("airing", airing, run_async=True)
