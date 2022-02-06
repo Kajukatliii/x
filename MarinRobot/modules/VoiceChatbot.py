@@ -55,7 +55,7 @@ async def Lycia(_, message):
     os.remove(LyciaVoice)
     await m.delete()
 
-    __mod_name__ = "VoiceChatBOT"
+__mod_name__ = "VoiceChatBOT"
 
 __help__ = """
 |• /marin : Voice Chat Bot.
