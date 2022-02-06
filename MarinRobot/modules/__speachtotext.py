@@ -92,3 +92,7 @@ async def _(event):
 
 __mod_name__ = "Speech2Text"
 
+__help__ = """
+
+|• /stt : change voice speech to text.
+"""
