@@ -108,7 +108,7 @@ Gathered By @Marinxrobot.</b>
 
     await event.delete()
     
-    __mod_name__ = "Country"
+__mod_name__ = "Country"
 
 __help__ = """
 |• /country : Gather information of given country name.
