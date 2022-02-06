@@ -187,3 +187,10 @@ async def nsfw_enable_disable(_, message):
         await message.reply_text("Disabled AntiNSFW System.")
     else:
         await message.reply_text("Unknown Suffix, Use /antinsfw [on/off]")
+        
+__mod_name__ = "NSFW"
+
+__help__ = """
+✬ /nsfw_scan - Manually Scan An Image/Sticker/Document.
+✬ /anti_nsfw [ON | OFF] - Turn This Module On/Off
+"""
