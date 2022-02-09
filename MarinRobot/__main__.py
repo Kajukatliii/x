@@ -113,7 +113,7 @@ buttons = [
         InlineKeyboardButton(text="✮Owner✮", url="t.me/SenseiMishashi"),
     ],
     [
-        InlineKeyboardButton(text="✬Support✬", url="t.me/+c28c_PRaxUthMmNl"),
+        InlineKeyboardButton(text="✬Support✬", url="https://t.me/Marinsupportx"),
         InlineKeyboardButton(text="✦Vortex System✦", url="t.me/Vortex_System"),
     ],
     [
@@ -263,7 +263,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/+c28c_PRaxUthMmNl"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Marinsupportx"
                         )
                     ],
                     [
@@ -410,9 +410,9 @@ def shasa_callback_data(update, context):
         query.message.edit_text(
             text="""
         ❍[Owner](https://t.me/xlorem)✯
-        ❍[Updates](https://t.me/MarinXSupport)✯
-        ❍[Suppσrt](https://t.me/MarinXSupport)✯
-        ❍[Suppσrt](https://t.me/MarinXSupport)✯
+        ❍[Updates](https://t.me/Marinsupportx)✯
+        ❍[Suppσrt](https://t.me/Marinsupportx)✯
+        ❍[Suppσrt](https://t.me/Marinsupportx)✯
         ❍ [ChatGrp](https://t.me/Animecastlevania)✯
         ✨[vc player help](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg)✨""",
             parse_mode=ParseMode.MARKDOWN,
@@ -434,7 +434,7 @@ def shasa_callback_data(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support",  url = "https://t.me/MarinXSupport"
+                            text="Support",  url = "https://t.me/Marinsupportx"
                         ),
                         InlineKeyboardButton(
                             text="Credits", callback_data="shasa_credit"
@@ -499,7 +499,7 @@ def shasa_callback_data(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/MarinXSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Marinsupportx"
                         ),
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/UpdatesMarin"
@@ -531,7 +531,7 @@ def shasa_callback_data(update, context):
                             text="Updates", url="https://t.me/UpdatesMarin"
                         ),
                         InlineKeyboardButton(
-                            text="Support", url="https://t.me/MarinXSupport"
+                            text="Support", url="https://t.me/Marinsupportx"
                         ),
                     ],
                     [
