@@ -109,12 +109,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="✰Help✰", callback_data="help_back"),
-        InlineKeyboardButton(text="✯Updates✯", url="t.me/MarinXUpdates"),
-        InlineKeyboardButton(text="✮Owner✮", url="t.me/karlexd"),
+        InlineKeyboardButton(text="✯Updates✯", url="t.me/UpdatesMarin"),
+        InlineKeyboardButton(text="✮Owner✮", url="t.me/SenseiMishashi"),
     ],
     [
         InlineKeyboardButton(text="✬Support✬", url="t.me/marinxsupport"),
-        InlineKeyboardButton(text="✦VortexUB✦", url="t.me/VortexUB"),
+        InlineKeyboardButton(text="✦Vortex System✦", url="t.me/Vortex_System"),
     ],
     [
         InlineKeyboardButton(text="✪Add Me To Your Group✪", url=f"t.me/MarinxRobot?startgroup=true"),
@@ -269,7 +269,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/MarinXUpdates",
+                            url="https://telegram.dog/UpdatesMarin",
                         )
                     ],
                 ]
@@ -413,7 +413,7 @@ def shasa_callback_data(update, context):
         ❍[Updates](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
         ❍[Suppσrt](https://t.me/marinxsupport)✯
-        ❍ [ChatGrp](https://t.me/Animec_cChat)✯
+        ❍ [ChatGrp](https://t.me/Animecastlevania)✯
         ✨[vc player help](https://telegra.ph/file/0adbb31a3fff0f4252111.jpg)✨""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -521,14 +521,14 @@ def shasa_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Owner", url="t.me/xlorem"),
+                        InlineKeyboardButton(text="Owner", url="t.me/SenseiMishashi"),
                         InlineKeyboardButton(
                             text="Github", url="https://github.com/kajukatlii"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Updates", url="https://t.me/MarinXUpdates"
+                            text="Updates", url="https://t.me/UpdatesMarin"
                         ),
                         InlineKeyboardButton(
                             text="Support", url="https://t.me/marinxsupport"
