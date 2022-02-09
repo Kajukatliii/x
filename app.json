@@ -203,9 +203,7 @@
       "MONGO_DB": {
          "value": ""
       },
-      "SPAMWATCH_API": {
-         "value": ""
-      },
+
       "REM_BG_API_KEY": {
          "value": ""
       },
